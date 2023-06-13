@@ -71,6 +71,13 @@ public double getRightEncoder(){
 }
 
 
+public void ResetEcoders(){
+
+FrontLeft.setSelectedSensorPosition(0);
+RearLeft.setSelectedSensorPosition(0);
+FrontRight.setSelectedSensorPosition(0);
+RearRight.setSelectedSensorPosition(0);
+}
 
 
 
