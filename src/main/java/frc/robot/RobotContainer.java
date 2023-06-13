@@ -8,6 +8,7 @@ import frc.robot.Constants.OperatorConstants;
 import frc.robot.commands.Autos;
 import frc.robot.commands.DrivetoSetpoint;
 import frc.robot.commands.ExampleCommand;
+import frc.robot.commands.ResetEncoder;
 import frc.robot.commands.TelopDrive;
 import frc.robot.subsystems.DriveSubsystem;
 import frc.robot.subsystems.ExampleSubsystem;
@@ -58,6 +59,12 @@ public class RobotContainer {
         new JoystickButton(m_driverController, 1)
         .whileTrue(new DrivetoSetpoint(m_DriveSubsystem, 0));////////////////////////////////////////////////////////////////////////////////
         
+
+new JoystickButton(m_driverController, 2)
+.whileTrue(new ResetEncoder(m_DriveSubsystem) );
+
+
+
 
     // Schedule `exampleMethodCommand` when the Xbox controller's B button is pressed,
     // cancelling on release.

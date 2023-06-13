@@ -28,8 +28,9 @@ public static final int Rear_Right_DriveID =4;
 public static final double Max_Drive_Speed = 0.5;
 public static final double Max_Rotation_Speeed = 0.5;
 
-  }//////////////////////////////////////
+public static final double newcode = 5;
 
+  }//////////////////////////////////////
 
 
 public static final class DrivePID {
